@@ -10,5 +10,6 @@ rvm:
 jobs:
   allow_failures:
     - os: windows
-after_script:
-  - geckodriver --version
+script:
+  - bundle exec rake
+  - bundle exec geckodriver --version
